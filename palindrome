@@ -1,0 +1,14 @@
+
+var str = "madammadam";
+var strings = checkPalindromes(str);
+console.log(strings)
+function checkPalindromes(str) {
+  let j = str.length
+  for (i = 0; i < j / 2; i++) {
+    if (str[i] !== str[j - 1 - i]) {
+      return false;
+
+    }
+  }
+  return true ;
+}
